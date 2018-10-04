@@ -3,3 +3,5 @@ name: NoLeafDecay
 version: 1.0.0
 author: ShaneBee
 api-version: 1.13
+website: https://ShaneBee.tk
+description: Stop ground leaves from decaying
