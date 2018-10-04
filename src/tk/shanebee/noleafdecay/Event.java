@@ -25,10 +25,12 @@ public class Event implements Listener {
         }
         else if (twobelow.getType() == Material.GRASS_BLOCK || twobelow.getType() == Material.DIRT || twobelow.getType() == Material.PODZOL || twobelow.getType() == Material.COARSE_DIRT) {
 
-            event.setCancelled(true);
-            Leaves leaf = (Leaves) event.getBlock().getState().getBlockData();
-            leaf.setPersistent(true);
-            event.getBlock().setBlockData(leaf);
+            if (!(below.getType() == Material.AIR)) {
+                event.setCancelled(true);
+                Leaves leaf = (Leaves) event.getBlock().getState().getBlockData();
+                leaf.setPersistent(true);
+                event.getBlock().setBlockData(leaf);
+            }
 
         }
 
