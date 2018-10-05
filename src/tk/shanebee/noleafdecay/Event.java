@@ -25,7 +25,8 @@ public class Event implements Listener {
         }
         else if (twobelow.getType() == Material.GRASS_BLOCK || twobelow.getType() == Material.DIRT || twobelow.getType() == Material.PODZOL || twobelow.getType() == Material.COARSE_DIRT) {
 
-            if (!(below.getType() == Material.AIR)) {
+            if (below.getType() == Material.OAK_LEAVES || below.getType() == Material.BIRCH_LEAVES || below.getType() == Material.SPRUCE_LEAVES ||
+                    below.getType() == Material.JUNGLE_LEAVES || below.getType() == Material.ACACIA_LEAVES || below.getType() == Material.DARK_OAK_LEAVES) {
                 event.setCancelled(true);
                 Leaves leaf = (Leaves) event.getBlock().getState().getBlockData();
                 leaf.setPersistent(true);
