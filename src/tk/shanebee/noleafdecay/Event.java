@@ -29,13 +29,16 @@ public class Event implements Listener {
 
         } else if (twoBelow.getType() == Material.GRASS || twoBelow.getType() == Material.DIRT) {
 
-            event.setCancelled(true);
-            Block block = event.getBlock();
-            BlockState state = block.getState();
-            Leaves leaves = (Leaves) state.getData();
-            leaves.setDecayable(false);
-            state.setData(leaves);
-            state.update();
+            if (below.getType() == Material.LEAVES || below.getType() == Material.LEAVES_2) {
+
+                event.setCancelled(true);
+                Block block = event.getBlock();
+                BlockState state = block.getState();
+                Leaves leaves = (Leaves) state.getData();
+                leaves.setDecayable(false);
+                state.setData(leaves);
+                state.update();
+            }
         }
 
     }
