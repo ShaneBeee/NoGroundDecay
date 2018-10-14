@@ -10,7 +10,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/Documents/BuildTools/Spigot/Spigot-API/target/spigot-api-1.13.1-R0.1-SNAPSHOT-shaded.jar!/" />
+          <root url="jar://$USER_HOME$/Desktop/Server/Archived/BuildTools/Spigot/Spigot-API/target/spigot-api-1.13.1-R0.1-SNAPSHOT-shaded.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
