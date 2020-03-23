@@ -1,7 +1,0 @@
-main: tk.shanebee.noleafdecay.Main
-name: NoGroundDecay
-version: 1.7.0
-author: ShaneBee
-api-version: 1.13
-website: https://ShaneBee.tk
-description: Stop ground leaves from decaying
