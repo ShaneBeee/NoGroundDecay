@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="NoGroundDecay">
-    <output-path>$USER_HOME$/Desktop/1.12Server/plugins</output-path>
-    <root id="archive" name="NoGroundDecay.jar">
-      <element id="module-output" name="NoGroundDecay" />
-    </root>
-  </artifact>
-</component>
